@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPYFAST - Fotocopy Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img src="logo_copyfast_apk.png" class="logo">
+
+<header>
+    <p>Jasa Fotocopy Online Cepat & Praktis 🚀</p>
+</header>
+
+<div class="container">
+    <h2>📄 Pesan Fotocopy</h2>
+
+    <form id="formPesan">
+        <input type="text" id="nama" placeholder="Masukkan Nama Kamu" required>
+        <textarea id="pesan" placeholder="Pesanan kamu (contoh: print 10 lembar hitam putih)" required></textarea>
+        <input type="file" id="file" required>
+        <button type="submit">📤 Pesan Sekarang</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2026 COPYFAST</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+if(localStorage.getItem("login") !== "true"){
+    alert("Silahkan login dulu!");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

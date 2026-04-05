@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk COPYFAST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <img src="logo_copyfast_apk.png" class="logo">
+
+    <h2>Selamat datang!</h2>
+    <p>Tekan tombol di bawah untuk memulai pesan fotocopy</p>
+    <button id="btnMasuk">Masuk</button>
+</div>
+
+<script>
+document.getElementById("btnMasuk").addEventListener("click", function(){
+    localStorage.setItem("login", "true");
+    window.location.href = "pesan.html";
+});
+</script>
+
+</body>
+</html>
